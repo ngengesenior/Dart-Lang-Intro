@@ -19,6 +19,12 @@ void main() {
   print(account1.balance);
   conTest();
   switchTest();
+
+  print("Testing while loop");
+  testWhile();
+  print("Testing do while");
+
+  testDoWhile();
 }
 
 
@@ -102,4 +108,35 @@ void switchTest(){
   }
 
   print("Output is $output");
+}
+
+
+void testWhile(){
+
+  int limit = 10;
+  int start = 1;
+
+  while(start < limit){
+    if(start %2 == 0){
+      print("$start is even");
+    }
+    else{
+      print("$start is odd");
+    }
+
+    start++;
+  }
+
+}
+
+
+testDoWhile(){
+ var start = 1;
+ var end = 20;
+
+ do{
+   print("$start is now the number concerned");
+   start++;
+ } while( start < end);
+
 }
