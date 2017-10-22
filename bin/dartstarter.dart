@@ -25,6 +25,10 @@ void main() {
   print("Testing do while");
 
   testDoWhile();
+
+  print("Testing string compare");
+
+  testStringCompare();
 }
 
 
@@ -139,4 +143,10 @@ testDoWhile(){
    start++;
  } while( start < end);
 
+}
+
+void testStringCompare() {
+  var string1 = "Ngenge";
+  var string2 = "Ngenge";
+  print("Comparing $string1 to $string2 gives:${string1.compareTo(string2)}");
 }
